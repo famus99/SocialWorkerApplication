@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workers - Alpha Sam Limited</title>
+    <link rel="stylesheet" href="/css_templates/Home.css">
+    <link rel="stylesheet" href="/css_templates/WorkerPage.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Alpha Sam Limited</h1>
+        <p>A website created by me</p>
+    </div>
+    
+    <div class="navbar">
+        <nav>
+            <ul>
+                <a href="WorkerPage.html" class="active">Workers</a>
+                <a href="Display.html">Clients</a>
+                <a href="Admin.html">Administration</a>
+                <a href="Testimonials.html">Testimonials</a>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="row">
+        <div class="side">
+            <h2>About Workers</h2>
+            <p>Our social workers are dedicated professionals committed to helping clients.</p>
+            <p>Use this page to manage worker information and view their assigned clients.</p>
+        </div>
+        
+        <div class="main">
+            <h2>Workers Management</h2>
+            
+            <!-- Worker List -->
+            <div id="workerList" class="worker-container">
+                <!-- Workers will be loaded here dynamically -->
+                <p>Loading workers...</p>
+            </div>
+            
+            <!-- Add New Worker Form -->
+            <div class="form-container">
+                <h3>Add New Worker</h3>
+                <form id="addWorkerForm">
+                    <div class="form-group">
+                        <label for="workerName">Name:</label>
+                        <input type="text" id="workerName" name="workerName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="workerRole">Role:</label>
+                        <input type="text" id="workerRole" name="workerRole" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Add Worker</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2025 Alpha Sam Limited. All rights reserved.</p>
+    </div>
+    
+    <!-- Include the common script file first -->
+    <script src="/js_templates/script.js"></script>
+    <!-- Include the page-specific script file -->
+    <script src="/js_templates/WorkerPage.js"></script>
+</body>
+</html>

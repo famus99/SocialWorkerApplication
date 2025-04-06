@@ -1,0 +1,87 @@
+/* WorkerPage.css - Styles specific to the Worker page */
+.worker-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.worker-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.worker-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.worker-role {
+    color: #666;
+    font-style: italic;
+}
+
+.worker-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.worker-actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-clients-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-worker-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.form-container {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0b7dda;
+}
