@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients - Alpha Sam Limited</title>
+    <link rel="stylesheet" href="/css_templates/Home.css">
+    <link rel="stylesheet" href="/css_templates/Display.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Alpha Sam Limited</h1>
+        <p>A website created by me</p>
+    </div>
+    
+    <div class="navbar">
+        <nav>
+            <ul>
+                <a href="WorkerPage.html">Workers</a>
+                <a href="Display.html" class="active">Clients</a>
+                <a href="Admin.html">Administration</a>
+                <a href="Testimonials.html">Testimonials</a>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="row">
+        <div class="side">
+            <h2>About Clients</h2>
+            <p>Our social workers help a diverse group of clients with various needs.</p>
+            <p>This page displays client information and allows you to manage clients for each worker.</p>
+        </div>
+        
+        <div class="main">
+            <button id="backToWorkers" class="back-button">← Back to Workers</button>
+            
+            <h2 id="clientsHeader">Clients Management</h2>
+            <div id="workerInfo"></div>
+            
+            <!-- Worker Selector (shown when no worker is selected) -->
+            <div id="workerSelector" class="worker-selector">
+                <h3>Select a Worker</h3>
+                <select id="workerDropdown">
+                    <option value="">-- Select a Worker --</option>
+                </select>
+                <button id="viewClientsBtn">View Clients</button>
+            </div>
+            
+            <!-- Client List -->
+            <div id="clientList" class="client-container">
+                <!-- Clients will be loaded here dynamically -->
+            </div>
+            
+            <!-- Add New Client Form -->
+            <div id="addClientForm" class="form-container" style="display: none;">
+                <h3>Add New Client</h3>
+                <form id="clientForm">
+                    <div class="form-group">
+                        <label for="clientName">Name:</label>
+                        <input type="text" id="clientName" name="clientName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="clientEmail">Email:</label>
+                        <input type="email" id="clientEmail" name="clientEmail" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Add Client</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2025 Alpha Sam Limited. All rights reserved.</p>
+    </div>
+    
+    <!-- Include the common script file first -->
+    <script src="/js_templates/script.js"></script>
+    <!-- Include the page-specific script file -->
+    <script src="/js_templates/Display.js"></script>
+</body>
+</html>

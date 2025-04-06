@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Alpha Sam Limited</title>
+    <link rel="stylesheet" href="/css_templates/Home.css">
+    <link rel="stylesheet" href="/css_templates/Admin.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Alpha Sam Limited</h1>
+        <p>A website created by me</p>
+    </div>
+    
+    <div class="navbar">
+        <nav>
+            <ul>
+                <a href="WorkerPage.html">Workers</a>
+                <a href="Display.html">Clients</a>
+                <a href="Admin.html" class="active">Administration</a>
+                <a href="Testimonials.html">Testimonials</a>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="row">
+        <div class="side">
+            <h2>About Administration</h2>
+            <p>This page provides administrative functions and statistics for the application.</p>
+            <p>Use this page to manage the system and view overall metrics.</p>
+        </div>
+        
+        <div class="main">
+            <h2>Administration Panel</h2>
+            
+            <!-- Statistics Section -->
+            <div class="admin-section">
+                <h3>System Statistics</h3>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-title">Total Workers</div>
+                        <div id="totalWorkers" class="stat-number">0</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-title">Total Clients</div>
+                        <div id="totalClients" class="stat-number">0</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-title">Avg. Clients per Worker</div>
+                        <div id="avgClientsPerWorker" class="stat-number">0</div>
+                    </div>
+                </div>
+                
+                <div class="actions-container">
+                    <button id="refreshStats">Refresh Statistics</button>
+                </div>
+            </div>
+            
+            <!-- Database Management Section -->
+            <div class="admin-section">
+                <h3>Database Management</h3>
+                <p>These actions can be used to manage the application data.</p>
+                <p><strong>Warning:</strong> Some actions cannot be undone. Use with caution.</p>
+                
+                <div class="actions-container">
+                    <button id="backupBtn">Backup Data</button>
+                    <button id="testConnectionBtn">Test Database Connection</button>
+                    <button id="resetDemoDataBtn" class="danger">Reset Demo Data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2025 Alpha Sam Limited. All rights reserved.</p>
+    </div>
+    
+    <!-- Include the common script file first -->
+    <script src="/js_templates/script.js"></script>
+    <!-- Include the page-specific script file -->
+    <script src="/js_templates/Admin.js"></script>
+</body>
+</html>
